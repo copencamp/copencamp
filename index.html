@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Learning Centre | Enrichment Beyond Classroom</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -514,21 +518,56 @@
       line-height: 1.6;
     }
 
-    .card-badge {
+    /* =============================================
+       UNIFIED BADGE/PILL STYLES — bigger, all red
+       ============================================= */
+
+    /* Age badges on hero cards and camp cards */
+    .card-badge,
+    .card-badge.amber-badge {
       position: absolute;
       top: 1.5rem; right: 1.5rem;
       background: var(--forest);
       color: var(--cream);
-      font-size: 0.7rem;
-      font-weight: 600;
-      padding: 0.25rem 0.7rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 0.38rem 0.95rem;
       border-radius: 100px;
       letter-spacing: 0.04em;
     }
 
-    .card-badge.amber-badge {
-      background: var(--amber);
-      color: var(--charcoal);
+    /* Age badge on camp section cards (the large ⛺ cards) */
+    .camp-age,
+    .camp-age:hover {
+      background: var(--forest);
+      color: var(--cream);
+      font-size: 1.05rem;
+      font-weight: 800;
+      padding: 0.55rem 1.15rem;
+      border-radius: 100px;
+      letter-spacing: 0.04em;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 76px;
+      text-align: center;
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+    .camp-age:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0,0,0,0.10); }
+
+    /* Week theme tags — all unified red */
+    .week-tag,
+    .week-tag.sage,
+    .week-tag.amber,
+    .week-tag.rust {
+      background: var(--forest);
+      color: var(--cream);
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 0.28rem 0.78rem;
+      border-radius: 100px;
+      letter-spacing: 0.03em;
     }
 
     /* ANNOUNCEMENT BANNER */
@@ -619,25 +658,6 @@
     }
 
     .camp-emoji { font-size: 2.5rem; }
-
-    .camp-age {
-      background: var(--amber);
-      color: var(--charcoal);
-      font-size: 0.95rem;
-      font-weight: 800;
-      padding: 0.45rem 0.95rem;
-      border-radius: 100px;
-      letter-spacing: 0.04em;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 68px;
-      text-align: center;
-      transition: transform 0.12s ease, box-shadow 0.12s ease;
-    }
-
-    .camp-age:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0,0,0,0.10); }
 
     .camp-card h3 {
       font-family: 'Lora', serif;
@@ -798,20 +818,6 @@
     .week-date { font-size: 0.78rem; color: var(--warm-gray); margin-bottom: 0.8rem; }
     .week-theme { font-weight: 600; font-size: 0.9rem; color: var(--forest); line-height: 1.4; }
     .week-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.8rem; }
-
-    .week-tag {
-      background: var(--forest);
-      color: var(--cream);
-      font-size: 0.68rem;
-      font-weight: 600;
-      padding: 0.2rem 0.6rem;
-      border-radius: 100px;
-      letter-spacing: 0.03em;
-    }
-
-    .week-tag.sage { background: var(--sage); }
-    .week-tag.amber { background: var(--amber); color: var(--charcoal); }
-    .week-tag.rust { background: var(--rust); }
 
     /* INFO SECTION */
     .info-section { background: var(--cream); padding: 6rem 5rem; }
@@ -1195,7 +1201,7 @@
 
 <!-- ANNOUNCEMENT -->
 <div class="announcement">
-  🗓️ Registration opens <strong>27th February 2026</strong>. <a href="#contact">Get notified →</a>
+  🗓️ Registration opens <strong>27th February 2026</strong>.
 </div>
 
 <!-- COPENCAMP -->
@@ -1388,8 +1394,7 @@
         <div class="modal-option-icon">🔢</div>
         <h3>Maths</h3>
         <p>Master mathematical concepts through interactive games and real-world problem-solving. Build confidence and unlock the joy of numbers!</p>
-        <!-- ✅ UPDATED: Week 29 Maths link -->
-        <a href="https://www.lcen.dk/events/copencamp-summer-math-intensive-week-29-age-group-12-to-15-years" class="btn-primary" target="_blank" rel="noopener noreferrer">Register Now →</a>
+        <a href="https://www.lcen.dk/events/space-copencamp-week-30-age-group-7-to-11" class="btn-primary" target="_blank" rel="noopener noreferrer">Register Now →</a>
       </div>
     </div>
   </div>
@@ -1445,8 +1450,7 @@
         <div class="modal-option-icon">🔢</div>
         <h3>Maths</h3>
         <p>Master mathematical concepts through interactive games and real-world problem-solving. Build confidence and unlock the joy of numbers!</p>
-        <!-- ✅ UPDATED: Week 31 Maths link -->
-        <a href="https://www.lcen.dk/events/copencamp-summer-math-intensive-week-31-age-group-12-to-15-years" class="btn-primary" target="_blank" rel="noopener noreferrer">Register Now →</a>
+        <a href="mailto:copencamp@gmail.com" class="btn-primary">Register Now →</a>
       </div>
     </div>
   </div>
