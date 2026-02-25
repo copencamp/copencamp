@@ -970,39 +970,6 @@
 
     .divider { height: 1px; background: linear-gradient(90deg, transparent, var(--light-line), transparent); margin: 0 5rem; }
 
-    /* REGISTRATION HIGHLIGHT */
-    .reg-banner {
-      background: linear-gradient(135deg, var(--rust), var(--amber));
-      padding: 2.5rem 5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 2rem;
-    }
-
-    .reg-banner-text h3 {
-      font-family: 'Lora', serif;
-      font-size: 1.5rem;
-      color: white;
-      margin-bottom: 0.3rem;
-    }
-
-    .reg-banner-text p { font-size: 0.88rem; color: rgba(255,255,255,0.8); }
-
-    .btn-white {
-      background: white;
-      color: var(--rust);
-      font-weight: 700;
-      font-size: 0.9rem;
-      padding: 0.8rem 2rem;
-      border-radius: 100px;
-      text-decoration: none;
-      white-space: nowrap;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
-
     .terms-wrapper { display: flex; justify-content: center; margin-top: 1.618rem; }
 
     .terms-btn {
@@ -1040,7 +1007,6 @@
       .info-section { padding: 4rem 2.5rem; }
       .faq-section { padding: 4rem 2.5rem; grid-template-columns: 1fr; gap: 2.5rem; }
       .cta-section { padding: 4rem 2.5rem; }
-      .reg-banner { padding: 2rem 2.5rem; }
       .gallery-carousel { padding: 2rem 2.5rem; }
       footer { padding: 2.5rem 2.5rem; }
       .divider { margin: 0 2.5rem; }
@@ -1071,7 +1037,6 @@
       .info-section { padding: 3rem 1.25rem; }
       .faq-section { padding: 3rem 1.25rem; grid-template-columns: 1fr; gap: 2rem; }
       .cta-section { padding: 3rem 1.25rem; }
-      .reg-banner { padding: 1.5rem 1.25rem; flex-direction: column; text-align: center; }
       .gallery-carousel { padding: 2rem 1.25rem; }
       footer { padding: 2rem 1.25rem; flex-direction: column; align-items: flex-start; gap: 1.25rem; }
       .divider { margin: 0 1.25rem; }
@@ -1099,7 +1064,6 @@
       .weeks-grid { grid-template-columns: 1fr; }
       .info-grid { grid-template-columns: 1fr; }
       .hero-stat-row { gap: 1.5rem; }
-      .reg-banner-text h3 { font-size: 1.2rem; }
       .btn-white { width: 100%; text-align: center; }
     }
   </style>
@@ -1121,7 +1085,6 @@
   <ul class="nav-links">
     <li><a href="#schedule">Schedule</a></li>
     <li><a href="#faq">FAQ</a></li>
-    <li><a href="#contact" class="nav-cta">Register Now</a></li>
   </ul>
   <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
     <span></span><span></span><span></span>
@@ -1132,7 +1095,6 @@
 <div class="nav-drawer" id="navDrawer">
   <a href="#schedule" onclick="closeDrawer()">Schedule</a>
   <a href="#faq" onclick="closeDrawer()">FAQ</a>
-  <a href="#contact" class="nav-cta" onclick="closeDrawer()">Register Now</a>
 </div>
 
 <!-- HERO -->
@@ -1207,7 +1169,7 @@
 <!-- COPENCAMP -->
 <section class="copencamp" id="copencamp">
   <div class="section-label">Summer 2026</div>
-  <h2 class="section-title reveal">Summer that<br/><em>inspires & grows</em></h2>
+  <h2 class="section-title reveal">Summer that<br/><em>inspires &amp; grows</em></h2>
   <div class="camps-grid">
     <a href="https://www.lcen.dk/camps" class="camp-card reveal hero-camps" target="_blank" rel="noopener noreferrer">
       <div class="card-icon green">⛺</div>
@@ -1475,15 +1437,6 @@
   </div>
 </div>
 
-<!-- REGISTRATION BANNER -->
-<div class="reg-banner">
-  <div class="reg-banner-text">
-    <h3>Registration Opens 27th Feb 2026</h3>
-    <p>Limited spots available — register early to secure a place.</p>
-  </div>
-  <a href="mailto:copencamp@gmail.com" class="btn-white">Register Now →</a>
-</div>
-
 <!-- PRACTICAL INFO -->
 <section class="info-section">
   <div class="section-label">Good to know</div>
@@ -1666,8 +1619,8 @@
       <div class="carousel-slide"><img class="carousel-img" data-index="19" data-src="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Carousel placeholder"/></div>
     </div>
     <div class="carousel-controls">
-      <button class="carousel-btn left" id="carouselPrev" aria-label="Previous">‹</button>
-      <button class="carousel-btn right" id="carouselNext" aria-label="Next">›</button>
+      <button class="carousel-btn left" id="carouselPrev" aria-label="Previous">&#8249;</button>
+      <button class="carousel-btn right" id="carouselNext" aria-label="Next">&#8250;</button>
     </div>
   </div>
   <div class="carousel-dots" id="carouselDots" aria-hidden="false"></div>
@@ -1895,5 +1848,3 @@
 
 </body>
 </html>
-
-
